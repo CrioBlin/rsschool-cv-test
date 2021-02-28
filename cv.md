@@ -54,7 +54,12 @@ function isPrime(num) {
 }
 ```
 
-
+## Experience
+* [webdev](https://rolling-scopes-school.github.io/crioblin-JS2020Q3/webdev/) - project from RSS2020FE
+* [Shelter](https://rolling-scopes-school.github.io/crioblin-JS2020Q3/shelter/pages/main/index.html) - project from RSS2020FE
+* [Momentum](https://rolling-scopes-school.github.io/crioblin-JS2020Q3/momentum/) - project from RSS2020FE
+* [Calculator](https://rolling-scopes-school.github.io/crioblin-JS2020Q3/calculator/) - project from RSS2020FE
+* [Virtual-Keyboard](https://rolling-scopes-school.github.io/crioblin-JS2020Q3/virtual-keybord/) - project from RSS2020FE
 
 ## Education
 * **Bachelor degree at Computer Science in Uzhhorod National University**
