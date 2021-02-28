@@ -6,7 +6,7 @@
 |--------- |-----------------------------------------|
 | Telegram | [CrioBlin](https://t.me/Crio_Blin)      |
 | GitHub   | [CrioBlin](https://github.com/crioblin) |
-| Email    | [crioblin@gmail.com]crioblin@gmail.com  |
+| Email    | [crioblin@gmail.com](crioblin@gmail.com)|
 
 ## Summary
 
