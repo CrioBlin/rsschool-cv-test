@@ -59,7 +59,21 @@
           </ul>
         </div>
       </section>
-      <section></section>
+      <section class="code">
+        <h2>Code example</h2>
+        <h3>Is a number prime? In JavaScript</h3>
+        <pre>
+          function isPrime(num) {
+            if(num > 1) {
+              for(let i = 2; i **2 <= num; i++){
+                if(!(num % i)){
+                  return false;
+                }
+              }
+            }else return false;
+            return true;
+          }</pre>
+      </section>
     </main>
     <footer>
       
