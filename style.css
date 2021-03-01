@@ -122,3 +122,27 @@ h3 {
   line-height: 110%;
   color: white;
 }
+
+.experience {
+  max-width: 500px;
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 5%;
+}
+
+.experience h2 {
+  text-align: center;
+}
+
+.exp-list {
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.exp-list a {
+  text-decoration: none;
+}
+
+.exp-list a:visited {
+  color: blue;
+}
