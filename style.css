@@ -146,3 +146,27 @@ h3 {
 .exp-list a:visited {
   color: blue;
 }
+
+.education {
+  max-width: 500px;
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 5%;
+}
+
+.education h2 {
+  text-align: center;
+}
+
+.education-list {
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.education-list a {
+  text-decoration: none;
+}
+
+.education-list a:visited {
+  color: blue;
+}
