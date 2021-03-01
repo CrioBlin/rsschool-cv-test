@@ -170,3 +170,12 @@ h3 {
 .education-list a:visited {
   color: blue;
 }
+
+.eng {
+  max-width: 500px;
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 5%;
+  text-align: center;
+}
+
