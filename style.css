@@ -193,6 +193,11 @@ h3 {
   text-align: center;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
 .contacts {
   width: 470px;
   margin-top: 30px;
@@ -201,5 +206,23 @@ h3 {
   padding-left: 30px;
 }
 .contacts h2 {
+  text-align: center;
+}
+
+.footer-info {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 200px;
+  height: 100%;
+}
+
+.footer-year p{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 75px;
+  font-weight: 700;
   text-align: center;
 }
