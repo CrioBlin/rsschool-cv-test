@@ -45,6 +45,20 @@ header h1 {
   margin-bottom: 10px;
 }
 
+figure {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  border: thin #c0c0c0 solid;
+}
+
+figcaption {
+  padding: 3px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
 .avatar {
   width: 200px;
   height: 300px;
@@ -53,6 +67,7 @@ header h1 {
 .summary {
   max-width: 500px;
   margin-top: 30px;
+  padding: 10px 0px;
   background-color: white;
   border-radius: 5%;
 }
@@ -68,6 +83,7 @@ header h1 {
 .skills {
   max-width: 500px;
   margin-top: 30px;
+  padding: 10px 0px;
   background-color: white;
   border-radius: 5%;
   display: flex;
@@ -102,6 +118,7 @@ h3 {
 .code {
   max-width: 500px;
   margin-top: 30px;
+  padding: 10px 0px;
   background-color: white;
   border-radius: 5%;
   display: flex;
@@ -126,6 +143,7 @@ h3 {
 .experience {
   max-width: 500px;
   margin-top: 30px;
+  padding: 10px 0px;
   background-color: white;
   border-radius: 5%;
 }
@@ -150,6 +168,7 @@ h3 {
 .education {
   max-width: 500px;
   margin-top: 30px;
+  padding: 10px 0px;
   background-color: white;
   border-radius: 5%;
 }
@@ -174,18 +193,47 @@ h3 {
 .eng {
   max-width: 500px;
   margin-top: 30px;
+  padding: 10px 0px;
   background-color: white;
   border-radius: 5%;
   text-align: center;
 }
 
+.eng h2 {
+  padding-bottom: 5px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
 .contacts {
   width: 470px;
   margin-top: 30px;
+  padding: 10px 0px;
+  padding-left: 30px;
   background-color: white;
   border-radius: 5%;
-  padding-left: 30px;
 }
 .contacts h2 {
+  text-align: center;
+}
+
+.footer-info {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 200px;
+  height: 100%;
+}
+
+.footer-year p{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 75px;
+  font-weight: 700;
   text-align: center;
 }
