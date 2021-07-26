@@ -199,6 +199,10 @@ h3 {
   text-align: center;
 }
 
+.eng h2 {
+  padding-bottom: 5px;
+}
+
 footer {
   display: flex;
   flex-direction: column;
