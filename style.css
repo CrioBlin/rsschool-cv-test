@@ -45,6 +45,20 @@ header h1 {
   margin-bottom: 10px;
 }
 
+figure {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  border: thin #c0c0c0 solid;
+}
+
+figcaption {
+  padding: 3px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
 .avatar {
   width: 200px;
   height: 300px;
