@@ -1,22 +1,6 @@
-* {
-  font-size: 10px;
-}
-
-p {
-  font-size: 1.1rem;
-  line-height: 120%;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 1.8rem;
-}
-
-h3 {
-  font-size: 1.3rem;
+:root {
+  --main-text-color: #8E9191;
+  --important-color: #F14835;
 }
 
 body {
@@ -24,44 +8,108 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f5f5f5;
+  background-color: #1C1E23;
+}
+
+.header-style-block {
+  position: absolute;
+  top: 50px;
+  left: 65px;
+  width: 150px;
+  height: 150px;
+  background-color: var(--important-color);
+}
+.wrapper {
+  width: 1200px;
 }
 
 header {
-  width: 400px;
-  max-width: 500px;
-  margin-top: 10px;
-  padding-top: 10px;
+  position: relative;
+  padding-top: 200px;
+  height: 300px;
   display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
   justify-content: space-evenly;
-  background-color: white;
-  border-radius: 5%;
-}
-
-header h1 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-figure {
-  display: flex;
-  flex-direction: column;
-  padding: 2px;
-  border: thin #c0c0c0 solid;
-}
-
-figcaption {
-  padding: 3px;
-  text-align: center;
-  color: white;
-  background-color: black;
+  align-items: center;
 }
 
 .avatar {
   width: 200px;
-  height: 300px;
+  padding: 1px;
+  border: 0.5px solid #FFFFFF ;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.name-content-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.name {
+  width: 350px;
+  height: 150px;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 50px;
+  font-style: normal;
+  line-height: 130%;
+  color: var(--important-color);
+}
+
+h1 span {
+  font-weight: 400;
+}
+
+.name-subtitle {
+  margin-top: 5px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--main-text-color);
+  text-transform: uppercase;
+}
+
+.contacts-wrapper {
+  width: 350px;
+}
+
+.contacts {
+  height: 100px;
+}
+
+.contact-item {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.contact-link {
+  margin-left: 10px;
+  display: inline-block;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.icon-link {
+  display: flex;
+  align-self: center;
+  fill: var(--important-color)
+}
+
+.icon-link:hover {
+  fill: #FFFFFF;
 }
 
 .summary {
@@ -206,18 +254,6 @@ h3 {
 footer {
   display: flex;
   flex-direction: column;
-}
-
-.contacts {
-  width: 470px;
-  margin-top: 30px;
-  padding: 10px 0px;
-  padding-left: 30px;
-  background-color: white;
-  border-radius: 5%;
-}
-.contacts h2 {
-  text-align: center;
 }
 
 .footer-info {
