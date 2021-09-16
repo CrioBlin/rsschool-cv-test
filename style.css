@@ -61,7 +61,7 @@ header {
 }
 
 h1 {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   font-size: 50px;
   font-style: normal;
@@ -75,7 +75,7 @@ h1 span {
 
 .name-subtitle {
   margin-top: 5px;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: 400;
   font-size: 15px;
   color: var(--main-text-color);
@@ -121,25 +121,44 @@ h1 span {
 .main {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 70px;
+  margin-top: 40px;
   justify-content: space-between;
 }
 
 .h2-title {
   padding-bottom: 25px;
-  font-family: Open Sans;
+  font-family: Open Sans, sans-serif;
   font-weight: 700;
   font-size: 20px;
   text-transform: uppercase;
   color: var(--title-color);
 }
 
+.h3-title {
+  display: inline-block;
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--important-color);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.h3-subtitle {
+  font-family: Open Sans, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #eeeeec;
+  text-transform: uppercase;
+}
+
 .section-wrapper {
+  margin-top: 30px;
   width: 45%;
   height: 100%;
   font-family: Open Sans;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   color: var(--main-text-color);
 }
@@ -163,7 +182,7 @@ h1 span {
 .side-border__circle {
   position: relative;
   top: 10px;
-  left: -7.5px;
+  left: -7px;
   background-color: var(--background-color);
   border-top: 5px solid var(--background-color);
   border-bottom: 5px solid var(--background-color);
@@ -171,27 +190,17 @@ h1 span {
   fill: var(--important-color);
 }
 
+/* Experience */
 
-
-
-
-.skills {
-  padding: 10px 0px;
-  background-color: white;
-  border-radius: 5%;
-  display: flex;
-  flex-direction: column;
+.exp__item {
+  margin-top: 60px;
 }
 
-.skills h2 {text-align: center;}
-
-li {font-size: 1rem;}
-
-ul {list-style-type: disc;}
-
-h3 {
-  padding-bottom: 5px;
+.exp__item:first-child {
+  margin-top: 0;
 }
+
+
 
 .tech-skills {
   padding-top: 10px;
@@ -231,31 +240,6 @@ h3 {
   font-size: 1rem;
   line-height: 110%;
   color: white;
-}
-
-.experience {
-  max-width: 500px;
-  margin-top: 30px;
-  padding: 10px 0px;
-  background-color: white;
-  border-radius: 5%;
-}
-
-.experience h2 {
-  text-align: center;
-}
-
-.exp-list {
-  padding-top: 10px;
-  padding-left: 30px;
-}
-
-.exp-list a {
-  text-decoration: none;
-}
-
-.exp-list a:visited {
-  color: blue;
 }
 
 .education {
