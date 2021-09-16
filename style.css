@@ -14,13 +14,14 @@ body {
 .header-style-block {
   position: absolute;
   top: 50px;
-  left: 65px;
+  left: 0px;
   width: 150px;
   height: 150px;
   background-color: var(--important-color);
 }
+
 .wrapper {
-  width: 1200px;
+  width: 1000px;
 }
 
 header {
@@ -34,7 +35,9 @@ header {
 
 .avatar {
   width: 200px;
+  height: 100%;
   padding: 1px;
+  box-sizing: border-box;
   border: 0.5px solid #FFFFFF ;
 }
 
