@@ -1,6 +1,8 @@
 :root {
-  --main-text-color: #8E9191;
-  --important-color: #F14835;
+  --main-text-color: #8e9191;
+  --important-color: #f14835;
+  --title-color: #b7b9b7;
+  --background-color: #1c1e23;
 }
 
 body {
@@ -8,7 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #1C1E23;
+  background-color: var(--background-color);
 }
 
 .header-style-block {
@@ -115,25 +117,65 @@ h1 span {
   fill: #FFFFFF;
 }
 
-.summary {
-  max-width: 500px;
-  margin-top: 30px;
-  padding: 10px 0px;
-  background-color: white;
-  border-radius: 5%;
+/* Main section */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  justify-content: space-between;
 }
 
-.summary h2 {text-align: center;}
-
-.summary p {padding: 5px;}
-
-.summary strong {
-  font-weight: bold;
+.h2-title {
+  padding-bottom: 25px;
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--title-color);
 }
+
+.section-wrapper {
+  width: 45%;
+  height: 100%;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--main-text-color);
+}
+
+.section__container {
+  position: relative;
+  padding-left: 30px;
+}
+
+/* Decoration */
+.section-side-border {
+  position: absolute;
+  top: 0;
+  left: 7px;
+  width: 1px;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #CCCDCB;
+}
+
+.side-border__circle {
+  position: relative;
+  top: 10px;
+  left: -7.5px;
+  background-color: var(--background-color);
+  border-top: 5px solid var(--background-color);
+  border-bottom: 5px solid var(--background-color);
+  border-radius: 50%;
+  fill: var(--important-color);
+}
+
+
+
+
 
 .skills {
-  max-width: 500px;
-  margin-top: 30px;
   padding: 10px 0px;
   background-color: white;
   border-radius: 5%;
