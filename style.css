@@ -3,6 +3,7 @@
   --important-color: #f14835;
   --title-color: #b7b9b7;
   --background-color: #1c1e23;
+  --progress-bar-color: #3c3c4a;
 }
 
 body {
@@ -200,18 +201,24 @@ h1 span {
   margin-top: 0;
 }
 
-
-
-.tech-skills {
-  padding-top: 10px;
-  padding-left: 30px;
+progress {
+  margin-top: 5px;
 }
 
-.language {
-  padding-top: 10px;
-  padding-left: 30px;
+progress[value] {
+  -webkit-appearance: none;
+} 
+
+progress[value]::-webkit-progress-bar {
+  height: 7px;
+  background-color: var(--progress-bar-color);
 }
 
+progress[value]::-webkit-progress-value {
+  background-color: var(--important-color);
+}
+
+/* Language */
 .soft-skills {
   padding-top: 10px;
   padding-left: 30px;
@@ -240,44 +247,6 @@ h1 span {
   font-size: 1rem;
   line-height: 110%;
   color: white;
-}
-
-.education {
-  max-width: 500px;
-  margin-top: 30px;
-  padding: 10px 0px;
-  background-color: white;
-  border-radius: 5%;
-}
-
-.education h2 {
-  text-align: center;
-}
-
-.education-list {
-  padding-top: 10px;
-  padding-left: 30px;
-}
-
-.education-list a {
-  text-decoration: none;
-}
-
-.education-list a:visited {
-  color: blue;
-}
-
-.eng {
-  max-width: 500px;
-  margin-top: 30px;
-  padding: 10px 0px;
-  background-color: white;
-  border-radius: 5%;
-  text-align: center;
-}
-
-.eng h2 {
-  padding-bottom: 5px;
 }
 
 footer {
