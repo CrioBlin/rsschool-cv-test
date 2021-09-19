@@ -153,6 +153,21 @@ h1 span {
   text-transform: uppercase;
 }
 
+.h5-title {
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: var(--important-color);
+}
+
+.h6-title {
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
 .main {
   display: flex;
   flex-wrap: wrap;
@@ -243,6 +258,41 @@ progress[value]::-webkit-progress-value {
   color: var(--important-color);
   text-align: center;
 }
+
+/* Projects */
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 100%;
+}
+
+.project__content {
+  width: 100%;
+}
+
+.project__item {
+  margin-top: 25px;
+}
+
+.project__item:first-child {
+  margin-top: 0;
+}
+
+.project__item .h5-title{
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.project__img {
+  width: 100%;
+}
+
+.technologies {
+  margin-top: 5px;
+}
+
 
 footer {
   display: flex;
