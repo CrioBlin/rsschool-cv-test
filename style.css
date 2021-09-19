@@ -153,6 +153,13 @@ h1 span {
   text-transform: uppercase;
 }
 
+.h4-title {
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
 .section-wrapper {
   margin-top: 30px;
   width: 45%;
@@ -219,9 +226,16 @@ progress[value]::-webkit-progress-value {
 }
 
 /* Language */
-.soft-skills {
-  padding-top: 10px;
-  padding-left: 30px;
+.language__item {
+  margin-bottom: 15px;
+}
+
+.language__item:last-child {
+  margin-bottom: 0;
+}
+
+.language__item p {
+  font-size: 15px;
 }
 
 .code {
