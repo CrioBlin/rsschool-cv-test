@@ -119,13 +119,6 @@ h1 span {
 }
 
 /* Main section */
-.main {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 40px;
-  justify-content: space-between;
-}
-
 .h2-title {
   padding-bottom: 25px;
   font-family: Open Sans, sans-serif;
@@ -158,6 +151,13 @@ h1 span {
   font-weight: 700;
   font-size: 15px;
   text-transform: uppercase;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  justify-content: space-between;
 }
 
 .section-wrapper {
