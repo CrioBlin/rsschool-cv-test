@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </head>
   <body>
     <header class="header wrapper">
@@ -217,19 +220,22 @@
         </div>
       </section>
       <section class="code section-wrapper">
-        <h2>Code example</h2>
-        <h3>Is a number prime? In JavaScript</h3>
+        <h2 class="h2-title">Code example</h2>
+        <h4 class="h4-title">Is a number prime? In JavaScript</h3>
         <pre>
-          function isPrime(num) {
-            if(num > 1) {
-              for(let i = 2; i **2 &lt;&#61; num; i++){
-                if(!(num % i)){
-                  return false;
+          <code class="javascript">
+            function isPrime(num) {
+              if(num > 1) {
+                for(let i = 2; i **2 &lt;&#61; num; i++){
+                  if(!(num % i)){
+                    return false;
+                  }
                 }
-              }
-            }else return false;
-            return true;
-          }</pre>
+              }else return false;
+              return true;
+            }
+          </code>
+        </pre>
       </section>
     </main>
     <!-- <footer>
