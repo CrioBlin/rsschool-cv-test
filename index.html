@@ -7,158 +7,317 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script src="./script.js" defer></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </head>
   <body>
-    <header>
-      <h1>Oleksandr Kaminetskyi</h1>
-      <figure>
-        <img class="avatar" src="1.jpg" alt="img">
-        <figcaption>The Emperor of mankind</figcaption>
-      </figure>
-    </header>
-    <main>
-      <section class="summary">
-        <h2>Summary</h2>
-        <p>Got <strong>bachelor degree at Computer Science</strong> in Uzhhorod National University 2020. 
-          Last project was finding quality of red & white wine by using Machine Learning algorithms. 
-          My current goal is to get experience in real-life projects as a front-end programmer.</p>
-      </section>
-      <section class="skills">
-        <h2>Skills</h2>
-        <div class="tech-skills">
-          <h3>Technical Skills</h3>
-          <ul>
-            <li>Programming languages:
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>C++</li>
-              </ul>
-            </li>
-            <li>Basic knowledge of Machine Learning</li>
-            <li>Administrating Windows Server 2008, 2012, 2016</li>
-            <li>Administrating Exchange Server 2016</li>
-            <li>Technical user support</li>
-          </ul>
+    <header class="header wrapper">
+      <div class="header-style-block">
+        <div class="nav-button">
+          <img src="./assets/icon-menu.png" alt="">
         </div>
-        <div class="language">
-          <h3>Language</h3>
-          <ul>
-            <li>English (A2)</li>
-            <li>Ukrainian (native speaker)</li>
-            <li>Russian (native speaker)</li>
-          </ul>
-        </div>
-        <div class="soft-skills">
-          <h3>Soft Skills</h3>
-          <ul>
-            <li>Patient</li>
-            <li>Willingness to learn</li>
-            <li>Team-working</li>
-            <li>Open-mindedness</li>
-            <li>Communication skill</li>
-          </ul>
-        </div>
-      </section>
-      <section class="code">
-        <h2>Code example</h2>
-        <h3>Is a number prime? In JavaScript</h3>
-        <pre>
-          function isPrime(num) {
-            if(num > 1) {
-              for(let i = 2; i **2 &lt;&#61; num; i++){
-                if(!(num % i)){
-                  return false;
-                }
-              }
-            }else return false;
-            return true;
-          }</pre>
-      </section>
-      <section class="experience">
-        <h2>Experience</h2>
-        <div class="exp-list">
-          <ul>
-            <li>
-              <a href="https://rolling-scopes-school.github.io/crioblin-JS2020Q3/webdev/" target="_blank">webdev</a>
-              - project from RSS2020FE
-            </li>
-            <li>
-              <a href="https://rolling-scopes-school.github.io/crioblin-JS2020Q3/shelter/pages/main/index.html" target="_blank">Shelter</a>
-              - project from RSS2020FE
-            </li>
-            <li>
-              <a href="https://rolling-scopes-school.github.io/crioblin-JS2020Q3/momentum/" target="_blank">Momentum</a>
-              - project from RSS2020FE
-            </li>
-            <li>
-              <a href="https://rolling-scopes-school.github.io/crioblin-JS2020Q3/calculator/" target="_blank">Calculator</a>
-              - project from RSS2020FE
-            </li>
-            <li>
-              <a href="https://rolling-scopes-school.github.io/crioblin-JS2020Q3/virtual-keybord/" target="_blank">Virtual-Keyboard</a>
-              - project from RSS2020FE
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="education">
-        <h2>Education</h2>
-        <div class="education-list">
-          <ul>
-            <li>
-              <strong>Bachelor degree at Computer Science in Uzhhorod National University</strong>
-            </li>
-            <li>
-              <a href="https://www.codecademy.com/profiles/Crio_Blin11" target="_blank">Codecadamy</a>
-              - courses
-            </li>            
-            <li>
-              <a href="https://learn.javascript.ru/" target="_blank">JavaScript</a>
-              - courses
-            </li>            
-            <li>
-              <a href="https://www.kaggle.com/" target="_blank">ML</a>
-              - courses
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="eng">
-        <h2>English</h2>
-        <p>My current English level is A2. I had a lot of practice with english in video-games, reading book, watching tv-shows & videos.</p>
-      </section>
-    </main>
-    <footer>
-      <div class="contacts">
-        <h2>Contact me at:</h2>
-        <ul>
-          <li>
-            <a href="https://t.me/Crio_Blin" target="_blank">Telegram</a>
+      </div>
+      <nav class="burger-menu">
+        <ul class="burger__list">
+          <li class="burger__item">
+            <a class="burger__link" href="#summary">Summary</a>
           </li>
-          <li>
-            <a href="https://github.com/crioblin" target="_blank">GitHub</a>
+          <li class="burger__item">
+            <a class="burger__link" href="#education">Education</a>
           </li>
-          <li>
-            <a href="crioblin@gmail.com" target="_blank">crioblin@gmail.com</a>
+          <li class="burger__item">
+            <a class="burger__link" href="#skills">Skills</a>
+          </li>
+          <li class="burger__item">
+            <a class="burger__link" href="#experience">Experience</a>
+          </li>
+          <li class="burger__item">
+            <a class="burger__link" href="#language">Language</a>
+          </li>
+          <li class="burger__item">
+            <a class="burger__link" href="#code">Code</a>
+          </li>
+          <li class="burger__item">
+            <a class="burger__link" href="#projects">Projects</a>
           </li>
         </ul>
+      </nav>
+      <div class="avatar">
+        <img src="./assets/avatar.jpg" alt="img">
       </div>
-      <div class="footer-info">
-        <div class="footer-logo">
+      <div class="name-content-wrapper">
+        <div class="name">
+          <h1>Kaminetskyi <span>Oleksandr</span></h1>
+          <p class="name-subtitle">Junior Front-End Developer</p>
+        </div>
+        <div class="contacts-wrapper">
+          <ul class="contacts">
+            <li class="contact-item">
+              <a class="icon-link" href="https://t.me/Crio_Blin" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px">
+                  <path d="M0 0h24v24H0V0z" fill="none"/>
+                  <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2 .01 7z"/>
+                </svg>
+              </a>
+              <a class="contact-link" href="https://t.me/Crio_Blin" target="_blank">Telegram</a>
+            </li>
+            <li class="contact-item">
+              <a class="icon-link" href="https://discord.com/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px">
+                  <g>
+                    <rect fill="none" height="24" width="24" y="0"/>
+                  </g>
+                  <g>
+                    <g>
+                      <path d="M19.27,5.33C17.94,4.71,16.5,4.26,15,4c-0.03,0-0.05,0.01-0.07,0.03c-0.18,0.33-0.39,0.76-0.53,1.09 c-1.61-0.24-3.22-0.24-4.8,0C9.46,4.78,9.25,4.36,9.06,4.03C9.05,4.01,9.02,4,8.99,4c-1.5,0.26-2.93,0.71-4.27,1.33 c-0.01,0-0.02,0.01-0.03,0.02c-2.72,4.07-3.47,8.03-3.1,11.95c0,0.02,0.01,0.04,0.03,0.05c1.8,1.32,3.53,2.12,5.24,2.65 c0.03,0.01,0.06,0,0.07-0.02c0.4-0.55,0.76-1.13,1.07-1.74c0.02-0.04,0-0.08-0.04-0.09c-0.57-0.22-1.11-0.48-1.64-0.78 c-0.04-0.02-0.04-0.08-0.01-0.11c0.11-0.08,0.22-0.17,0.33-0.25c0.02-0.02,0.05-0.02,0.07-0.01c3.44,1.57,7.15,1.57,10.55,0 c0.02-0.01,0.05-0.01,0.07,0.01c0.11,0.09,0.22,0.17,0.33,0.26c0.04,0.03,0.04,0.09-0.01,0.11c-0.52,0.31-1.07,0.56-1.64,0.78 c-0.04,0.01-0.05,0.06-0.04,0.09c0.32,0.61,0.68,1.19,1.07,1.74C17.07,20,17.1,20.01,17.13,20c1.72-0.53,3.45-1.33,5.25-2.65 c0.02-0.01,0.03-0.03,0.03-0.05c0.44-4.53-0.73-8.46-3.1-11.95C19.3,5.34,19.29,5.33,19.27,5.33z M8.52,14.91 c-1.03,0-1.89-0.95-1.89-2.12s0.84-2.12,1.89-2.12c1.06,0,1.9,0.96,1.89,2.12C10.41,13.96,9.57,14.91,8.52,14.91z M15.49,14.91 c-1.03,0-1.89-0.95-1.89-2.12s0.84-2.12,1.89-2.12c1.06,0,1.9,0.96,1.89,2.12C17.38,13.96,16.55,14.91,15.49,14.91z"/>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+              <a class="contact-link" href="https://discord.com/" target="_blank">Discord @Crio_Blin#7595</a></li>
+            <li class="contact-item">
+              <a class="icon-link" href="mailto:crioblin@gmail.com" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" >
+                  <path d="M0 0h24v24H0V0z" fill="none"/>
+                  <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 4.99L4 6h16zm0 12H4V8l8 5 8-5v10z"/>
+                </svg>
+              </a>
+              <a class="contact-link" href="mailto:crioblin@gmail.com" target="_blank">Email</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main wrapper">
+      <section class="summary section-wrapper">
+        <h2 class="h2-title" id="summary">Summary</h2>
+        <div class="section__container">
+          <p>I am System Administrator. Currently learning as Front-end Developer. 
+            My goal is to get experience in real-life projects as a front-end programmer, and start a career in Web Development</p>
+          <div class="section-side-border">
+            <svg class="side-border__circle" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" height="15" width="15">
+              <circle cx="50" cy="50" r="50"/>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="education section-wrapper">
+        <h2 class="h2-title" id="education">Education</h2>
+        <div class="section__container">
+          <div class="education__content">
+            <ul class="education__list">
+              <li class="education__item">
+                <h3 class="h3-title">Uzhhorod National University</h3>
+                <span class="h3-subtitle">2015 - 2020</span>
+                <p><strong>Bachelor degree at Computer Science and Technologies</strong></p>              
+              </li>
+              <li class="exp__item">
+                <h3 class="h3-title">Uzhhorod Institute of Trade and Economics</h3>
+                <span class="h3-subtitle">2011 - 2015</span>
+                <p><strong>Specialist in Hotel and Restaurant Management</strong></p>
+              </li>
+            </ul>
+          </div>
+          <div class="section-side-border">
+            <svg class="side-border__circle" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" height="15" width="15">
+              <circle cx="50" cy="50" r="50"/>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="skills section-wrapper">
+        <h2 class="h2-title" id="skills">Skills</h2>
+          <div class="section__container">
+            <div class="skills__content">
+              <ul class="skills__list">
+                <li class="skill">HTML</li>
+                <progress max="100" value="80"></progress>
+                <li class="skill">CSS</li>
+                <progress max="100" value="55"></progress>
+                <li class="skill">JavaScript</li>
+                <progress max="100" value="50"></progress>
+                <li class="skill">Sass</progress></li>
+                <progress max="100" value="80"></progress>
+                <li class="skill">Git</progress></li>
+                <progress max="100" value="45"></progress>
+                <li class="skill">Windows Server 2008, 2012, 2016</li>
+                <progress max="100" value="75"></progress>
+                <li class="skill">Exchange Server 2016</li>
+                <progress max="100" value="60"></progress>
+                <li class="skill">Network</li>
+                <progress max="100" value="65"></progress>
+              </ul>
+            </div>
+            <div class="section-side-border">
+              <svg class="side-border__circle" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" height="15" width="15">
+                <circle cx="50" cy="50" r="50"/>
+              </svg>
+            </div>
+          </div>
+      </section>
+      <section class="experience section-wrapper">
+        <h2 class="h2-title" id="experience">Experience</h2>
+        <div class="section__container">
+          <div class="exp__content">
+            <ul class="exp__list">
+              <li class="exp__item">
+                <h3 class="h3-title">System Administrator</h3>
+                <span class="h3-subtitle">2018 - Present</span>
+                <p>Setting-up servers and maintaining them. Communication network building. Tech support.</p>
+              </li>
+              <li class="exp__item">
+                <h3 class="h3-title">Offset Printing Specialist</h3>
+                <span class="h3-subtitle">2017 - 2018</span>
+                <p>Printing on T-shirts. Printig banners. Maintaining and small repairs for printers. 3D Printing & 3D Scanning.</p>
+              </li>
+              <li class="exp__item">
+                <h3 class="h3-title">Sale Manager</h3>
+                <span class="h3-subtitle">2015 - 2017</span>
+                <p>Selling and setting-up CCTV eqipment</p>
+              </li>
+            </ul>
+          </div>
+          <div class="section-side-border">
+            <svg class="side-border__circle" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" height="15" width="15">
+              <circle cx="50" cy="50" r="50"/>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="language section-wrapper">
+        <h2 class="h2-title" id="language">Language</h2>
+        <div class="section__container">
+          <ul class="language__list">
+            <li class="language__item">
+              <h4 class="h4-title">English</h4>
+              <p>A2</p>
+            </li>
+            <li class="language__item">
+              <h4 class="h4-title">Ukrainian</h4>
+              <p>Native Speaker</p>
+            </li>
+            <li class="language__item">
+              <h4 class="h4-title">Russian</h4>
+              <p>Native Speaker</p>
+            </li>
+          </ul>
+          <div class="section-side-border">
+            <svg class="side-border__circle" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" height="15" width="15">
+              <circle cx="50" cy="50" r="50"/>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="code section-wrapper">
+        <h2 class="h2-title" id="code">Code example</h2>
+        <h4 class="h4-title">Is a number prime? In JavaScript</h3>
+        <pre>
+          <code class="javascript">
+            function isPrime(num) {
+              if(num > 1) {
+                for(let i = 2; i **2 &lt;&#61; num; i++){
+                  if(!(num % i)){
+                    return false;
+                  }
+                }
+              }else return false;
+              return true;
+            }
+          </code>
+        </pre>
+      </section>
+      <section class="projects section-wrapper">
+        <h2 class="h2-title" id="projects">Projects</h2>
+        <div class="project__content">
+          <ul class="project__list">
+            <li class="project__item">
+              <h5 class="h5-title">WebDev</h5>
+              <a class="project__link" href="https://rolling-scopes-school.github.io/crioblin-JS2020Q3/webdev/" target="_blank">
+              <img class="project__img" src="./assets/projects/webdev.jpg" alt="">
+              </a>
+              <p class="project__description">Landing page of WebDev, first-made project</p>
+              <div class="technologies">
+                <h6 class="h6-title">Used technologies</h6>
+                <p>HTML, CSS</p>
+              </div>
+            </li>
+            <li class="project__item">
+              <h5 class="h5-title">WildLife</h5>
+              <a href="https://rolling-scopes-school.github.io/crioblin-JSFE2021Q1/wildlife/index.html" target="_blank">
+              <img class="project__img" src="./assets/projects/wildlife.jpg" alt="">
+              </a>
+              <p class="project__description">Landing page</p>
+              <div class="technologies">
+                <h6 class="h6-title">Used technologies</h6>
+                <p>HTML, CSS</p>
+              </div>
+            </li>
+            <li class="project__item">
+              <h5 class="h5-title">Shelter</h5>
+              <a href="https://rolling-scopes-school.github.io/crioblin-JS2020Q3/shelter/pages/main/index.html" target="_blank">
+              <img class="project__img" src="./assets/projects/shelter.jpg" alt="">
+              </a>
+              <p class="project__description">Shelter for animals, in this project implemented pop-ups on animals card</p>
+              <div class="technologies">
+                <h6 class="h6-title">Used technologies</h6>
+                <p>HTML, CSS, Sass, JS</p>
+              </div>
+            </li>
+            <li class="project__item">
+              <h5 class="h5-title">Momentum</h5>
+              <a href="https://rolling-scopes-school.github.io/crioblin-JS2020Q3/momentum/" target="_blank">
+              <img class="project__img" src="./assets/projects/momentum.jpg" alt="">
+              </a>
+              <p class="project__description">Small analog of Google extention Momentum, dashbord with changing background depending on time of a day</p>
+              <div class="technologies">
+                <h6 class="h6-title">Used technologies</h6>
+                <p>HTML, CSS, JS</p>
+              </div>
+            </li>
+            <li class="project__item">
+              <h5 class="h5-title">Calculator</h5>
+              <a href="https://rolling-scopes-school.github.io/crioblin-JS2020Q3/calculator/" target="_blank">
+              <img class="project__img" src="./assets/projects/calculator.jpg" alt="">
+              </a>
+              <p class="project__description">Calculator - for calculating :)</p>
+              <div class="technologies">
+                <h6 class="h6-title">Used technologies</h6>
+                <p>HTML, CSS, JS</p>
+              </div>
+            </li>
+            <li class="project__item">
+              <h5 class="h5-title">Virtual-Keyboard</h5>
+              <a href="https://rolling-scopes-school.github.io/crioblin-JS2020Q3/virtual-keybord/" target="_blank">
+              <img class="project__img" src="./assets/projects/virtual-keyboard.jpg" alt="">
+              </a>
+              <p class="project__description">Virtual Keyboard, has sound effects of real-life keyboard, speech recognition, and 2 language layouts EN/RU</p>
+              <div class="technologies">
+                <h6 class="h6-title">Used technologies</h6>
+                <p>HTML, CSS, Sass, JS</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>  
+    </main>
+    <footer class="footer wrapper">
+      <div class="footer__info">
+        <div class="footer__logo">
           <a href="https://rs.school/js/" target="_blank">
-            <img class="logo" src="./rs_logo.svg" alt="logo">
+            <img class="logo" src="./assets/rs_logo.svg" alt="logo">
           </a>
         </div>
-        <div class="footer-year">
+        <div class="footer__year">
           <p>2021</p>
         </div>
+        <div class="footer__git">
+          <a href="https://github.com/crioblin" target="_blank"><img src="./assets/icon-git.png" alt="github"></a>
+        </div>
       </div>
+      <div class="footer-style-block"></div>
     </footer>
   </body>
 </html>
